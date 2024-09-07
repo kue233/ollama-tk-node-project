@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Deploy to DigitalOcean
         run: |
-          ssh root@174.138.65.158 'bash /path/to/your/deploy.sh'
+          ssh root@174.138.65.158 'bash deploy.sh'
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
